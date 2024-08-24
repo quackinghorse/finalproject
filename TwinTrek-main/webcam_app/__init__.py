@@ -1,0 +1,2 @@
+from .gestureDetector.keypoint_classifier.keypoint_classifier import KeyPointClassifier
+from .gestureDetector.hand_gesture import HandDetector 

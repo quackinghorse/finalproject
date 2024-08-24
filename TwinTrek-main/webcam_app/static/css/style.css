@@ -1,0 +1,100 @@
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .round-button {
+    display: inline;
+    padding: 20px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 50%; /* Make the button round */
+    background-color:#ba1f1f; /* Set background color */
+    color:#ba1f1f; /* Set text color */
+    border: none; /* Remove border */
+  }
+
+  /* Add some hover effect to the button */
+  .round-button:hover {
+    background-color: #29b94f; /* Change background color on hover */
+  }
+  .color-change-button {
+    border-radius: 50%;
+    padding: 20px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #ba1f1f; /* Initial background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove border */
+  }
+
+  /* Add some hover effect to the button */
+  .color-change-button:hover {
+    background-color: #29b92b; /* Change background color on hover */
+  }
+
+  /* Add a class for the clicked state */
+  .color-change-button.clicked {
+    background-color: #e74c3c; /* Change background color when clicked */
+  }
